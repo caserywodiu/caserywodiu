@@ -1,0 +1,23 @@
+
+<!DOCTYPE html><!--html5的声明-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--汉字编码格式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><!--标题-->
+</head>
+<body>
+    
+</body>
+</html>
+
+<!--
+    <button></button>:代表按钮元素
+    <p></p>:代表一段文字
+    <a href="https://www.youtube.com/" target="-back">Link to YouTube</a>
+    :href是<a></a>这个标签的属性，它会带你进入一个链接。
+    :target属性决定了这个链接是否在当前页面打开
+    :href和target属性仅适用于link元素
+
+
+ -->
