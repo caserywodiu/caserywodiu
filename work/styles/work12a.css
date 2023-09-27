@@ -1,0 +1,144 @@
+p
+{
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.sum0-flex
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.blue0
+{
+    width: 200px;
+    background-color: lightblue;
+}
+
+.pink0
+{
+    width: 75px;
+    background-color: lightpink;
+}
+
+.sum1-flex
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.blue1
+{
+    background-color: lightblue;
+    width: 50px;
+}
+
+.pink1
+{
+    background-color: lightpink;
+    flex:1;
+}
+
+.green1
+{
+    background-color: lightgreen;
+    width:75px;
+}
+
+.sum3-flex
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+
+}
+
+
+.item1
+{
+    background-color: lightpink;
+}
+
+.item2
+{
+    background-color: lightpink;
+}
+.item3
+{
+    background-color: lightpink;
+}
+
+.item4
+{
+    background-color: lightpink;
+}
+
+.sum4-flex
+{
+    display: flex;
+    height: 50px;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    align-items: center;
+}
+
+.item11
+{
+    background-color: lightpink;
+}
+
+.item22
+{
+    background-color: lightpink;
+}
+
+.sum4
+{
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0,0.3);   
+}
+
+.top-flex
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px; 
+}
+
+ 
+
+.buttom-14
+{
+    background-color:rgba(0, 119, 255, 0.97) ;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0,0.3);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+
+

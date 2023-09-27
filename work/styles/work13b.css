@@ -1,0 +1,91 @@
+
+.flex-box
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 380px;
+    height: 280px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0,0.05);
+    border:none;
+}
+
+.top
+{
+    font-size: 14px;
+    color: rgb(120,120,120);
+    margin-bottom: 20px;
+}
+
+.buttom
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cat-div
+{
+    width: 60px;
+    
+}
+
+.picture-cat
+{
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+    border-radius: 23px;
+}
+
+.p-div
+{ 
+    flex:1;
+}
+
+.buttom-top-div
+{
+    display: flex;
+    height: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Chewy-p
+{   
+    font-family: Arial;
+    font-weight: bold;
+    color: black;
+}
+
+.time-div
+{
+    font-size: 6px;
+    color: gray;
+    margin-right: 15px;
+}
+
+.buttom-center-div
+{
+    display: flex;
+    height:20px;
+    align-items: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+.buttom-buttom-div
+{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    font-size: 6px;
+    color: gray;
+}
+
+
+

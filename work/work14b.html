@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>work14b-exercise</title>
+
+        <style>
+            .right-sidebar
+            {
+                position: fixed;
+                background-color: green;
+                color: white;
+                right:0;
+                top:0;
+                bottom: 0;
+                width: 100px;
+            }
+
+            .cover
+            {
+                position: fixed;
+                background-color: rgba(0, 0, 0, 0.5);
+                top:0;
+                bottom:0;
+                right: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .flex-sum
+            {
+                width: 300px;
+                background-color:white;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left:15px;
+                padding-right: 15px;
+                border-radius: 10px;   
+            }
+
+            .Modal-div
+            {
+                font-family: Arial;
+                font-size: 32px;
+                font-weight: bold;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .This-div
+            {
+                font-size: 18px;
+                
+                color: rgb(40, 40, 40);
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="right-sidebar">right sidebar</div>
+        <div class="cover">
+            <div class="flex-sum">
+                <div class="Modal-div">
+                    Modal Title
+                </div>
+                <div class="This-div">
+                    This is a modal
+                </div>
+                <button class="Close-button">Close</button>
+            </div>
+        </div>
+
+    </body>
+</html>

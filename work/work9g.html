@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            div-lesson
+        </title>
+
+        <style>
+            .grid-practice
+            {
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                column-gap: 20px;
+            }
+
+            p
+            {
+                font-family: Arial;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .div-lesson
+            {
+                width: 200px;
+                vertical-align: top;
+                margin-left: 10px;
+                border: none;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            }
+
+            .cat-img
+            {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                object-position: center;
+                margin-bottom: 10px;
+            }
+
+            .dog-friends-div
+            {
+                margin-left: 8px;
+                margin-bottom: 10px;
+                align-items: center;
+                display: grid;
+                grid-template-columns: 28px 1fr;
+                column-gap: 5px;
+            }
+
+            .dog-img
+            {
+                width: 28px;
+                height: 28px;
+                border-radius: 14px;
+                object-fit: cover;
+                object-position: center;
+                vertical-align: middle;
+                margin-right: 4px;
+            }
+
+            .Name-text
+            {   
+                font-size: 18px;
+                font-weight: bold;
+                margin-left: 8px;
+                margin-bottom: 5px;
+            }
+            .Friends-text
+            {
+                
+                color:rgba(128, 128, 128, 0.961);
+            }
+
+            .Add-button
+            {
+                font-size: 16px;
+                background-color: rgb(24, 119, 242);
+                color: white;
+                border:none;
+                font-family: Arial;
+                border-radius: 4px;
+                padding-left: 22px;
+                padding-right: 22px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-left: 8px;
+                margin-bottom:10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="grid-practice">
+        <div class="div-lesson">
+            <img class="cat-img" src="cat.jpg">
+            <p class="Name-text">Oliver</p> 
+            <div class="dog-friends-div"> 
+                <img class="dog-img" src="dog2.jpg">
+                <p class="Friends-text">2 mutual friends</p>
+            </div>
+                <button class="Add-button">Add Friend</button>
+        </div>
+
+        <div class="div-lesson">
+            <img class="cat-img" src="cat2.jpg">
+            <p class="Name-text">Mimi</p> 
+            <div class="dog-friends-div">
+                <img class="dog-img" src="dog2.jpg">
+                <p class="Friends-text">3 mutual friends</p>
+            </div>
+            <button class="Add-button">Add Friend</button>
+        </div>
+
+        <div class="div-lesson">
+            <img class="cat-img" src="dog.jpg">
+            <p class="Name-text">Rex</p>
+            <div class="dog-friends-div">
+                <img class="dog-img" src="dog2.jpg">
+                <p class="Friends-text">4 mutual friends</p>
+            </div>
+            <button class="Add-button">Add Friend</button>
+        </div>
+    </div>
+    </body>
+</html>

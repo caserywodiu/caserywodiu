@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>grid-pratice</title>
+
+        <style>
+            .sum1-div
+            {
+                display: grid;
+                grid-template-columns: 200px 75px;
+                margin-bottom: 10px;
+            }
+
+            .sum2-div
+            {
+                display: grid;
+                margin-bottom: 10px;
+                grid-template-columns:50px 1fr 75px;
+            }
+
+            .px2-div
+            {
+                background-color: lightblue;
+            }
+
+            .px7-div
+            {
+                background-color: lightpink;
+            }
+
+            .sum3-div
+            {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 10px;
+            }
+
+            .l1-div
+            {
+                background-color: lightblue;
+            }
+
+            .l2-div
+            {
+                background-color: lightpink;
+            }
+
+            .l3-div
+            {
+                background-color: lightblue;
+            }
+
+            .coll-div
+            {
+                background-color: lightpink;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="sum1-div">
+            <div class="px2-div">200px</div>
+            <div class="px7-div"> 75px</div>
+        </div>
+
+        <div class="sum2-div">
+            <div class="l1-div">coll</div>
+            <div class="l2-div">col2</div>
+            <div class="l3-div">col3</div>
+        </div>
+        
+        <div class="sum3-div">
+            <div class="coll-div">coll</div>
+            <div class="coll-div">coll</div>
+            <div class="coll-div">coll</div>
+            <div class="coll-div">coll</div>
+            <div class="coll-div">coll</div>
+            <div class="coll-div">coll</div>
+            <div class="coll-div">coll</div>
+            <div class="coll-div">coll</div>
+        </div>
+    </body>
+</html>
