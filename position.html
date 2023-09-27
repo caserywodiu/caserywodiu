@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Position Practise</title>
+
+        <!--
+            position:fixed 固定位置，元素放在浏览器窗口中
+            top:指定我们的元素距离窗口顶部有多远
+            left:指定我们的元素距离窗口左边有多远
+            right:指定我们的元素距离窗口右边有多远，距离不够可能会被拉伸
+
+            position:absolute 绝对位置，元素放在页面上，当我们滚动页面时，它的位置不变
+            可以将元素放在页面上的精准位置。
+            它可以将这个元素固定在fixed上面,也就是绝对位置位于固定位置上时。这时候位于元素上而非页面上
+            z-index:决定哪些元素出现在前面哪些元素出现在后面
+            z-index的默认值为0
+
+            position:relative  位置设为相对的，在设置它之后仍然显示正常元素
+            除非我们在这里放置绝对元素，它将相对于改元素而非该页面。
+        -->
+    </head>
+
+    <body style="
+    padding-top: 60px;
+    height: 3000px;
+    margin-left: 80px;
+    ">
+        <div style="
+        background-color: black;
+        color: white;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        z-index: 2;
+        ">
+            header
+        </div>
+        <div style="
+        background-color: green;
+        color: white;
+        position:fixed;
+        top:50px;
+        left:0;
+        bottom: 0;
+        width:60px;
+        ">
+            sidebar
+            <div style="
+            position: absolute;
+            background-color: red;
+            color: white;
+            top:0px;
+            right: 0px;
+            z-index: 3;
+            ">
+            x
+            </div>
+        </div>
+        <div style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        top:20px;
+        right: 20px;
+        z-index: 3;
+        ">
+        absolute
+        </div>
+
+        <div style="
+        background-color: lightblue;
+        width: 200px;
+        height: 200px;"
+        >div1</div>
+
+        <div style="
+        background-color: lightpink;
+        width:200px;
+        height: 200px;
+        position: relative; "
+        >div2
+            <div style="
+            position: absolute;
+            background-color:black;
+            color: white;
+            right: 0px;
+            bottom: 0;
+            
+            ">
+            5:00
+        </div>
+    </body>
+
+</html>

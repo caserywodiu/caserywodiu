@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>YouTube.com Clone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <!--
+            <link rel="stylesheet" href="styles/buttons.css">
+            link:链接文件 俩个属性 rel 和href
+            <img class="thumbnail" src="thumbnail/thumbnail-1.webp">
+            img:链接图片 两个个属性 class:类名 src:链接地文件 
+            object-fit: cover 可以进行覆盖一部分
+            object-fit: contain 整体进行覆盖
+            object-position:left 对图像的左边进行覆盖
+            border-style:边框的样式
+            <input type="text" >:设置文本框
+            <input type="checkbox">:设置复选框
+            placeholder="Search"：占位符里面的内容为“Search”
+            <input class="Search-bar"  type="text" placeholder="Search">
+            html三个基本元素：
+            1，块元素，它会占据一整行 block element
+            2，内联块元素，它会占据该站的位置 inline-block
+            3，内联元素,出现在一行文本中的内联元素 inline element
+            css中属性名为display可以轻松地改变快和块之间的切换
+
+            div:是一个盒子容器，它的关键特征是它可以包含任何其他内部内容
+            <div>can contain other elements
+
+            vertical-align: top;垂直对齐，元素在顶部对齐
+            Layouts Technique:嵌套布局技术，有两种布局方式，一种为垂直布局，另一种为水平布局
+
+            flex-box:灵活的盒子
+            justify-content:space-between 可以将盒子内的东西平均分
+            align-items:位置据中间垂直对齐
+            flex-shrink:0 无论发生什么，我们将保持这个宽度，并且不会缩小
+
+            Media Query:响应式 媒体查询
+
+            padding:4px ;它可以代替padding-top:4px,padding-buttom:4px,padding-left:4px,padding-right:4px;
+            padding:4px 4px;代表垂直和水平个4px
+            padding:4px 10px 20px 30px;第一个4px代表top,剩下的值顺时针代表。
+            margin:同padding一样。
+
+            Inheritance:继承 如果我们在外部设置一些属性，它可能会传递到内部
+            但是并非所有的属性都受到继承的影响比如边框，因此继承主要适用于文本属性
+            例如：底层颜色，字体，粗细和字体系列
+
+            Semantic Elements:语义元素比如
+            <header></header>
+            <nav></nav>
+            所有这些元素的工作方式和div相同，除啦他们对搜索引擎和屏幕阅读有特殊
+            意义
+
+            white-space: nowrap;提示文本不要换行。
+        -->
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+    </head>
+    <body> 
+        <header class="header">
+            <div class="left-section">
+                <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+                <img class="youtube-logo" src="icons/youtube-logo.svg">
+            </div>
+            <div class="middle-section">
+                <input class="Search-bar"  type="text" placeholder="Search">
+                <button class="search-buttom"> 
+                    <img class="search-icon" src="icons/search.svg">
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-search-buttom">
+                    <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="icons/upload.svg">
+                    <div class="tooltip">Great</div>
+                </div>
+                 
+                <div class="youtube-apps-container">
+                    <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+                    <div class="tooltip">YouTube apps</div>
+                </div>
+                
+                <div class="notifications-icon-container">
+                    <img class="notifications-icon" src="icons/notifications.svg">
+                    <div class="notifications-count">3</div>
+                    <div class="tooltip">notifications</div>
+                </div>
+                <img class="current-use-picture"
+                src="work/my-channel.jpeg">
+            </div>
+        </header>
+
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="work/home.svg">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="work/explore.svg">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="work/subscriptions.svg">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="work/originals.svg">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="work/youtube-music.svg">
+                <div>You Tube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="work/library.svg">
+                <div>Library</div>
+            </div>
+        </nav>
+        
+        <main>
+            <section class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-1.webp">
+                        </a>
+                        <div class="video-time">14:20</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <div class="profile-picutre-container">
+                                <img class="profile-picture" src="work/channel-1.jpeg">
+                                <div class="channel-tooltip">
+                                     <img class="channel-tooltip-picture" src="work/channel-1.jpeg">
+                                    <div  class="channel-tooltip-text">
+                                        <div class="channel-tooltip-name">
+                                            Marques Brownless
+                                        </div>
+                                        <div class="channel-tooltip-subscribers">
+                                            15M subscribers
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    Talking Tech and AI with Google CEO Sundar Pichai!
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Marques Brownless
+                            </p>
+                
+                            <p class="video-stats">
+                                3.4M views · 6 months ago
+                            </p>
+                        </div>
+                     </div>
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-2.webp">
+                        </a>
+                        
+                        <div class="video-time">8:22</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <img class="profile-picture" src="work/channel-2.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    Try Not To Laugh Challenge #9
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Markiplier
+                            </p>
+                
+                            <p class="video-stats">
+                                19M views · 4 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-3.webp">
+                        </a>
+                        <div class="video-time">9:13</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <img class="profile-picture" src="work/channel-3.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    Crazy Tik Toks Taken Moments Before DISASTER
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                SSSniperWolf
+                            </p>
+                
+                            <p class="video-stats">
+                                12M views · 1 year ago
+                            </p>
+                        </div>
+                     </div>
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-4.webp">
+                        </a>
+                         
+                        <div class="video-time">22:09</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <img class="profile-picture" src="work/channel-4.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Veritasium
+                            </p>
+                
+                            <p class="video-stats">
+                                18M views · 4 months ago
+                            </p>
+                        </div>
+                        </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-5.webp">
+                        </a>
+                       
+                        <div class="video-time">11:17</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <img class="profile-picture" src="work/channel-5.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    Kadane's Algorithm to Maximum Sum Subarray Problem
+                                </p>
+                            </a>
+                
+                            <p class="video-author">
+                                CS Dojo
+                            </p>
+                
+                            <p class="video-stats">
+                                519K views · 5 years ago
+                            </p>
+                        </div>
+                     </div>
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-6.webp">
+                        </a>
+                        
+                        <div class="video-time">19:59</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <img class="profile-picture" src="work/channel-6.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    Anything You Can Fit In The Circle I'll Pay For
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                MrBeast
+                            </p>
+                
+                            <p class="video-stats">
+                                141M views · 1 year ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-7.webp">
+                        </a>
+                        
+                        <div class="video-time">10:13</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <img class="profile-picture" src="work/channel-7.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    Why Planes Don't Fly Over Tibet
+                                </p>
+                            </a>
+                
+                            <p class="video-author">
+                                RealLifeLore
+                            </p>
+                
+                            <p class="video-stats">
+                                6.6M views · 1 year ago
+                            </p>
+                        </div>
+                     </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=lFm4EM1juls" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-8.webp">
+                        </a>
+                        
+                        <div class="video-time">7:12</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <img class="profile-picture" src="work/channel-8.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=lFm4EM1juls" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    Inside The World's Biggest Passenger Plane
+                                </p>
+                            </a>
+                
+                            <p class="video-author">
+                                Tech Vision
+                            </p>
+                
+                            <p class="video-stats">
+                                3.7M views · 10 months ago
+                            </p>
+                        </div>
+                     </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-9.webp">
+                        </a>
+                        
+                        <div class="video-time">13:17</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <img class="profile-picture" src="work/channel-9.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    The SECRET to Super Human STRENGTH
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                ThenX
+                            </p>
+                
+                            <p class="video-stats">
+                                20M views · 3 year ago
+                            </p>
+                        </div>
+                     </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-10.webp">
+                        </a>
+                         
+                        <div class="video-time">7:53</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <img class="profile-picture" src="work/channel-10.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Business Insider
+                            </p>
+                
+                            <p class="video-stats">
+                                14M views · 1 year ago
+                            </p>
+                        </div>
+                     </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=0nZuYyXET3s" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-11.webp">
+                        </a>  
+                        <div class="video-time">4:10</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <img class="profile-picture" src="work/channel-11.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=0nZuYyXET3s" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+                                </p>    
+                            </a>
+                           
+                            <p class="video-author">
+                                Destination Tips
+                            </p>
+                
+                            <p class="video-stats">
+                                3M views · 1 year ago
+                            </p>
+                        </div>
+                     </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs" target="_blank" class="video-title-link">
+                            <img class="thumbnail" src="thumbnail/thumbnail-12.webp">
+                        </a>
+                        <div class="video-time">4:51</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-pictuer">
+                            <img class="profile-picture" src="work/channel-12.jpeg">
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs" target="_blank" class="video-title-link">
+                                <p class="video-title">  
+                                    What would happen if you didn’t drink water? - Mia Nacamulli
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                TED-Ed
+                            </p>
+                
+                            <p class="video-stats">
+                                12M views · 5 years ago
+                            </p>
+                        </div>
+                     </div>
+                </div>
+            </section>
+        </main>
+    </body> 
+
+</html>
