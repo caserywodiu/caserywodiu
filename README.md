@@ -1,7 +1,4 @@
-- 👋 Hi, I’m @caserywodiu
-- 👀 I’m interested in run and  computer
-- 🌱 I’m currently learning some basic knowledge about git
-- 💞️ I’m looking to collaborate on ...
+- 👋 Hi, I’m 天元之奕
 - 📫 How to reach me ...please call my mailbox :1487419821@qq.com
 
 <!---
